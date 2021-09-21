@@ -1,7 +1,7 @@
 {
-  "name": "video-dl",
+  "name": "wsn-yt-dl",
   "version": "1.0.0",
-  "description": "Youtube and Facebook Downloader.",
+  "description": "Youtube Video And Audio Downloader.",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mskian/video-dl.git"
+    "url": "git+https://github.com/TheRatanDas/yt-dl.git"
   },
   "keywords": [
     "youtube",
@@ -23,9 +23,9 @@
   "author": "Santhosh Veer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mskian/video-dl/issues"
+    "url": "https://github.com/TheRatanDas/yt-dl/issues"
   },
-  "homepage": "https://github.com/mskian/video-dl#readme",
+  "homepage": "https://github.com/TheRatanDas/yt-dl#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
