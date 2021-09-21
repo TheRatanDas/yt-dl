@@ -1,6 +1,6 @@
 {
-    "name": "video-dl",
-    "description": "Youtube and Facebook Downloader.",
+    "name": "wsn-yt-dl",
+    "description": "Youtube Video And Audio Downloader.",
     "repository": "https://github.com/mskian/video-dl",
     "keywords": ["node", "express", "static"]
 }
