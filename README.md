@@ -1,6 +1,6 @@
 # Video Downloader 📥
 
-![API Test](https://github.com/mskian/video-dl/workflows/GET%20Test/badge.svg) [![dependencies Status](https://david-dm.org/mskian/video-dl/status.svg)](https://david-dm.org/mskian/video-dl)  
+![API Test](https://github.com/TheRatanDas/yt-dl/workflows/GET%20Test/badge.svg) [![dependencies Status](https://david-dm.org/TheRatanDas/yt-dl/status.svg)](https://david-dm.org/TheRatanDas/yt-dl)  
 
 Video Downloader - Download Facebook Video and Youtube Video and Audio.  
 
@@ -22,11 +22,11 @@ Video Downloader - Download Facebook Video and Youtube Video and Audio.
 - Clone or download the repo
 
 ```sh
-git clone https://github.com/mskian/video-dl.git
+git clone https://github.com/TheRatanDas/yt-dl.git
 ```
 
 ```sh
-cd video-dl
+cd yt-dl
 yarn install
 ```
 
@@ -90,13 +90,13 @@ For More check- <https://github.com/fent/node-ytdl-core#ytdlchooseformatformats-
 
 - Deploy on Heroku - `app.js`
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mskian/video-dl)  
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TheRatanDas/yt-dl)  
 
 - Deploy on Vercel - `index.js`
 
 ⚠ Vercel having RUNTIME Failed issue while downloading the youtube Video - <https://github.com/vercel/vercel/issues/3825>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fmskian%2Fvideo-dl)  
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FTheRatanDas%2Fyt-dl)  
 
 ## Extract Downloadable Link ✂
 
