@@ -96,60 +96,6 @@ app.get('/video/:video', async (req, res) => {
     }
 });
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Sample URL: http://localhost:4000/hd/video?url=https://www.facebook.com/LyricsEngsongs/videos/321854395918041/ //
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-app.get('/hd/:video', function(req, res) {
-    var video = req.query.url;
-    (async () => {
-        try {
-            const response = await got(video);
-            const High_q = response.body.split('hd_src:"')[1].split('",sd_src:"')[0];
-            const seo_title = response.body.split('<title id="pageTitle">')[1].split('</title>')[0];
-            const title = slugify(seo_title, {
-                replacement: '-',
-                remove: /[*+~.()'"!:@]/g,
-                lower: true,
-                strict: true
-            });
-            console.log(High_q || 'null');
-            const final = High_q;
-            res.send('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><P>Your File is Ready <b>' + title + '</b> - For Download Click Download File & save the Video <br> PC Users Right Click From Mouse and Click Save us <br> Mobile Users Long press the Link for Direct download</p> ▶ <a href="'+ final +'" target="_blank"><b>Download File</b></a></body></html>');
-        } catch (error) {
-            console.log('null');
-            res.send('HD Not avilable for this Video');
-        }
-    })();
-});
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Sample URL: http://localhost:4000/low/video?url=https://www.facebook.com/LyricsEngsongs/videos/321854395918041/ //
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-app.get('/low/:video', function(req, res) {
-    var video = req.query.url;
-    (async () => {
-        try {
-            const response = await got(video);
-            const Low_q = response.body.split('sd_src:"')[1].split('",hd_tag')[0];
-            const seo_title = response.body.split('<title id="pageTitle">')[1].split('</title>')[0];
-            const title = slugify(seo_title, {
-                replacement: '-',
-                remove: /[*+~.()'"!:@]/g,
-                lower: true,
-                strict: true
-            });
-            console.log(Low_q || 'null');
-            const final = Low_q;
-            res.send('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><P>Your File is Ready <b>' + title + '</b> - For Download Click Download File & save the Video <br> PC Users Right Click From Mouse and Click Save us <br> Mobile Users Long press the Link for Direct download</p> ▶ <a href="'+ final +'" target="_blank"><b>Download File</b></a></body></html>');
-        } catch (error) {
-            console.log('null');
-            res.send('SD Not avilable for this Video');
-        }
-    })();
-});
-
 app.use('/', function(req, res) {
     res.status(404).json({
         error: 1,
